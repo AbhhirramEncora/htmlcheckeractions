@@ -3,36 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Actions Test</title>
+    <title>Beautiful Plants</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f5;
+            color: #2c3e50;
+        }
+        header {
+            background-color: #27ae60;
+            color: white;
             text-align: center;
-            margin-top: 50px;
-            background-color: #f4f4f4;
+            padding: 20px 0;
         }
         h1 {
-            color: #333;
+            margin: 0;
         }
-        .status {
-            margin-top: 20px;
-            padding: 10px;
-            background: #e0e0e0;
-            display: inline-block;
-            border-radius: 5px;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 15px;
+            width: 250px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card h2 {
+            margin: 10px 0;
+            color: #27ae60;
+        }
+        .card p {
+            padding: 0 10px 15px;
+            font-size: 14px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #27ae60;
+            color: white;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <h1>GitHub Actions Workflow Test</h1>
-    <p>This page is deployed using <strong>GitHub Actions</strong>.</p>
-    <div class="status">
-        <p>Status: <span id="status-text">Build Pending...</span></p>
+    <header>
+        <h1>🌱 Welcome to the Plant World 🌱</h1>
+        <p>Discover the beauty of nature</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            https://images.unsplash.com/photo-1501004318641-b39e6451bec6
+            <h2>Indoor Plant</h2>
+            <p>Perfect for your home or office. Adds greenery and freshness to your space.</p>
+        </div>
+        <div class="card">
+            https://images.unsplash.com/photo-1524594154908-edd2f1e2c9f3
+            <h2>Succulent</h2>
+            <p>Low maintenance and stylish. Ideal for modern interiors.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501009e6451bec6
+            <h2>Flowering Plant</h2>
+            <p>Brighten your day with colorful blooms and natural fragrance.</p>
+        </div>
     </div>
 
-    <script>
-        // Simple script to simulate dynamic content
-        document.getElementById('status-text').textContent = 'Build Successful!';
-    </script>
+    <footer>
+        <p>© 2025 Plant World | Powered by GitHub Pages</p>
+    </footer>
 </body>
 </html>
